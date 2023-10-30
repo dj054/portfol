@@ -1,0 +1,575 @@
+body{
+    color : #03001C #301E67 #5B8FB9 #B6EADA ;
+
+    background-color: #03001C;
+    color: #B6EADA;
+    /* padding-top: 15px ; */
+    /* padding-left: 6%;
+    padding-right: 6%; */
+
+    cursor: url("favicon.ico");
+
+}
+
+h1{
+    color: #5B8FB9;
+    /* background-image: url(download.png);
+    background-clip: text;
+    -webkit-background-clip:text; */
+}
+@media (max-width: 500px){
+    .container-fluid {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+
+/* --------------------------------------------------------- */
+/* menu */
+/* for removal of border */
+.navbar-toggler-icon {
+  /* display: inline-block; */
+  width: 1.5em;
+  height: 1.5em;
+  
+  /* vertical-align: middle; */
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; */
+}
+.navbar-toggler {
+    border: 0px;
+}
+.navbar {
+    /* border-style: solid; */
+    /* display: none;            */
+
+    padding-top: 15px;
+}
+nav img{
+    margin-left: 50px;
+}
+
+nav .container-fluid #navbarNav ul li a{
+
+    /* border-style: solid; */
+    
+    font-size: large;
+    margin: 0px 5%;
+    display: inline-block;
+
+
+}
+nav .container-fluid #navbarNav ul li a:hover {
+
+    color:rgba(218, 112, 214, 0.67);
+
+}
+nav .container-fluid #navbarNav ul li a:active {
+
+    color: rgb(255, 57, 248) ;
+
+}
+
+@media (max-width: 500px) { 
+    #freespace {
+        display: none;        
+    }
+    nav img{
+        margin-left: 10px;
+    }
+}
+.bg-normal{
+    background-color: rgba(3, 0, 26, 0.848);
+}
+
+
+/* --------------------------------------------------------- */
+
+/* hero */
+/* neon lights */
+#neonele{
+    border-style: solid;
+    /* position: absolute; */
+}
+.neonrec{
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    width: 180px;  /*3*/
+    height: 270px; /*5*/
+
+    box-shadow: 5px 5px 20px #00ffff,
+                -5px -5px 20px rgb(0, 255, 255),
+                -5px -5px 20px rgb(0, 255, 255) inset,
+                5px 5px 20px rgb(0, 255, 255) inset
+    ;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.074));
+
+    transition-property: border-color, box-shadow;
+    transition-duration: 10s;
+    
+
+
+}
+.neonrec:hover {
+    border-color: #DC143C;
+    box-shadow: 5px 5px 20px #DC143C,
+        -5px -5px 20px #DC143C,
+        -5px -5px 20px #DC143C inset,
+        5px 5px 20px #DC143C inset
+    ;
+    
+
+}
+
+.one {
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+    /* z-index: -2; */
+
+    animation: backInUp 2s ease 1, bounce 07s linear 2s infinite;
+    /* animation: backInUp 2s ease 1; */
+}
+
+.two {
+    /* display: none; */
+
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+    /* z-index: -2; */
+
+    animation: backInUp 2s ease 1, heroani2 2s ease 1.9s 1, bounce 07s linear 5.5s infinite;
+    animation-fill-mode: forwards;
+
+}
+.three {
+    /* display: none; */
+
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+    /* z-index: -2; */
+
+
+    animation: backInUp 2s ease 1, heroani3 2s ease 1.9s 1, bounce 07s linear 7s infinite;
+    animation-fill-mode: forwards;
+
+
+}
+@keyframes backInUp {
+    0% {
+      transform: translateY(1200px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    80%, 85% {
+      transform: translateY(0px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+@keyframes heroani2 {
+    0% {
+        right: 300px;
+        bottom: 100px;
+    }
+    100% {
+        right: 225px;
+        bottom: 175px;
+    }
+}
+@keyframes heroani3 {
+    0% {
+        right: 300px;
+        bottom: 100px;
+    }
+    100% {
+        right: 150px;
+        bottom: 250px;
+    }
+}
+@media (max-width: 1080px) { 
+    .neonrec{
+        width: 120px;  /*3*/
+        height: 200px; /*5*/
+    }
+    .one{
+        right: 250px;
+        bottom: 100px;
+    }
+    .two{
+        right: 250px;
+        bottom: 100px;
+    }
+    .three{
+        right: 250px;
+        bottom: 100px;
+    }
+    @keyframes heroani2 {
+        0% {
+            right: 250px;
+            bottom: 100px;
+        }
+        100% {
+            right: 200px;
+            bottom: 150px;
+        }
+    }
+    @keyframes heroani3 {
+        0% {
+            right: 250px;
+            bottom: 100px;
+        }
+        100% {
+            right: 150px;
+            bottom: 200px;
+        }
+    }
+
+}
+@media (max-width: 820px) { 
+    .neonrec{
+        width: 120px;  /*3*/
+        height: 200px; /*5*/
+    }
+    .one{
+        /* position: static; */
+        right: 45%;
+        bottom: 70px;
+    }
+    .two{
+        right: 45.0%;
+        bottom: 70px;
+    }
+    .three{
+        right: 45.0%;
+        bottom: 70px;
+    }
+    @keyframes heroani2 {
+        0% {
+            right: 45.0%;
+            bottom: 70px;
+        }
+        100% {
+            right: calc(45.0% - 50px);
+            bottom: 120px;
+        }
+    }
+    @keyframes heroani3 {
+        0% {
+            right: 45.0%;
+            bottom: 70px;
+        }
+        100% {
+            right: calc(45.0% - 100px);
+            bottom: 170px;
+        }
+    }
+
+}
+    /* levitate animation */
+@keyframes bounce {
+    0%,  50%, 100% {transform: translateY(0);}
+    25% {transform: translateY(7.5px);}
+    75% {transform: translateY(-7.5px);}
+}
+  
+/* --------------------------------------------------------- */
+
+/* hero text */
+#hero{
+    /* border-style: solid; */
+
+    height: 100vh;
+    text-align: center;
+    padding-top: 37vh;
+
+    background: linear-gradient(-0deg, #03001C,  #191970, #03001C    );
+	/* background-size: 400% 400%; */
+	animation: gradient 15s ease infinite;
+
+}
+#hero button {
+    background-color: #301e6700;
+    border-color: #301e6700;
+
+    color: rgba(255, 255, 255, 0.685);
+    padding: 10px;
+    z-index: 3;
+
+}
+#hero button:hover {
+    background-color: #B6EADA;
+    color: #03001C;
+}
+
+/* --------------------------------------------------------- */
+/* aboutme */
+#aboutme {
+    /* border-style: solid; */
+
+    min-height: 100px;
+    width: auto;    
+
+    margin-left: 40%;     /*may change to float*/
+    margin-right: 15%;     /*may change to float*/
+
+
+}
+#aboutme h1 {
+    margin-left: 20px; 
+    color: #5B8FB9 ; 
+
+}
+@media (max-width: 500px) { 
+    #aboutme {
+        /* border-style: solid; */
+        width: 100%; 
+        margin: 0px;  
+
+    }
+    #aboutme h1 {
+        margin-left: 0px;  
+
+    }
+    #aboutme p {
+        margin-left: 20px;  
+
+    }
+}
+
+/* --------------------------------------------------------- */
+/* skills */
+#skill {
+    padding-top: 70px;
+}
+
+#lib {
+    /* border-style: solid; */
+
+    margin-top: 100px;
+    padding-left:50%;
+    line-height: 0.2;
+
+}
+#lib .progress{
+    /* border-style: solid; */
+
+    margin-bottom:10px;
+
+}
+#lang {
+    /* border-style: solid; */
+    line-height: 0.2;
+    margin-top: 30px;
+    /* margin-left: 3%; */
+}
+#lang .progress{
+    /* border-style: solid; */
+
+    margin-bottom:10px;
+
+}
+/* --------------------------------------------------------- */
+
+#stats {
+    margin-top: 100px; 
+    /* border-style: solid; */
+
+
+}
+#stats .bcol {
+
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+    display: none;
+    margin: 10px;
+
+    text-align: center;
+    line-height: 10px;
+
+    border: black solid ;
+    border-radius: 20px;
+}
+#stats div {
+    margin: auto; 
+    max-width: 700px;
+    vertical-align: top;
+
+}
+@media (max-width: 840px) { 
+    #stats div {
+        max-width: 520px;
+    }
+    #stats .bcol {
+        display: inline-block;
+        visibility: hidden;
+    }
+}
+@media (max-width: 650px) { 
+    #stats div {
+        max-width: 350px;
+    }
+    #stats .bcol {
+        display: none;
+    }
+}
+@media (max-width: 500px) { 
+    #stats div {
+        max-width: 180px;
+    }
+}
+
+#stats .col {
+
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+
+    margin: 10px;
+    padding: 2% 0.5% 0% 0.5% ;
+
+    text-align: center;
+
+    border: rgb(21, 214, 162) solid ;
+    border-radius: 20px;
+
+    transition: background-color 2s ease-in-out;
+}
+#stats .col:hover{
+    
+    background-color: rgb(141, 141, 229);
+}
+
+#stats .num {
+    font-size: 180%;
+}
+
+/* ------------------------------------------------- */
+/* education */
+#edu{
+    margin-top: 100px;
+}
+.blk  {
+    /* border-style: solid; */
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.blk img {
+    float: left;
+}
+.blk .data {
+    /* border-style: solid; */
+
+    margin-left: 300px; /* change according to size of picture */
+    margin-top: 5px;
+}
+@media (max-width: 520px) { 
+    .blk {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .blk img {
+
+        width: 100%;
+
+    }
+    .blk .data {
+        
+        margin-left: 05px; /* change according to size of picture */
+        
+    }
+}
+
+
+
+/* --------------------- */
+/* projects */
+#proj {
+    margin-top: 70px;
+    clear: both;
+}
+
+
+
+
+
+
+
+.row {
+    /* border-style: solid; */
+    max-width: 800px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 4px px; */
+    margin: auto;
+  }
+  
+.projblk{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-bottom: 01%;
+    background-color: rgba(46, 11, 92, 0.249);
+    border-width: 0px 010px 0px 0px;
+    border-style: solid;
+
+}
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 5px;
+
+}
+.pic{
+    flex: 60%;
+    max-width: 60%;
+}
+.pinfo{
+    flex: 40%;
+    max-width: 40%;
+    margin-top: 01%;
+}
+
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  } */
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } */
+
+
+
+
+  .bg-info {
+    background-color: rgb(30, 255, 0) !important;
+
+  }
